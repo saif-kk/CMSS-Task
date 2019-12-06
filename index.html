@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CMSS Task</title>
+    <meta name="description" content="Task Performance">
+    <!-- StyleSheets -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!--End of StyleSheets -->
+
+    <script src="header.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <script>
+        document.write(header);
+    </script>
+    <!-- End Navigation Bar-->
+
+
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ol class="breadcrumb hide-phone p-0 m-0">
+                        <li class="breadcrumb-item"><a href="#" style="color: #868e96;">Dashboard</a></li>
+                        <li class="breadcrumb-item" style="color: #007bff">Website Analytics</li>
+                    </ol>
+                    <h3>Welcome to Dashboard</h3>
+                </div>
+                <div class="col-sm-8 p-r-20 text-right">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-save"></i> Save</button>
+                    <button class="btn btn-outline-secondary"><i class="fa fa-sign-out"
+                            style="transform : rotate(-90deg)"></i> Export</button>
+                    <button class="btn btn-outline-secondary"><i class="fa fa-share-alt"></i> Share</button>
+                    <button class="btn btn-primary" style="background: #0268f7;"><i class="fa fa-sliders" style="transform : rotate(90deg)"></i>
+                        Settings</button>
+                </div>
+            </div>
+
+            <!-- start of graph and chart -->
+            <div class="row m-t-20">
+                <div class="col-sm-8">
+                    <div class="portlet">
+                        <div class="row">
+                            <div class="portlet-heading col-sm-7">
+                                <h3 class="portlet-title text-dark"> Website Audience Market </h3>
+                                <br />
+                                <h4 class="m-t-10" style="font-size:0.7rem;color: #bcbfc8">Audience to which the user
+                                    belonged while on the current data range.</h4>
+                            </div>
+                            <div class="col-sm-4 grp-btn-c">
+                                <div class="btn-group m-b-10">
+                                    <button type="button" class="btn btn-outline-secondary waves-effect">DAY</button>
+                                    <button type="button" class="btn btn-outline-secondary waves-effect">WEEK</button>
+                                    <button type="button"
+                                        class="btn btn-outline-secondary waves-effect active">MONTH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div id="bg-default" class="panel-collapse collapse show">
+                                    <div class="portlet-body">
+                                        <div id="graph-user"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="prog-bar-main">
+                                    <div class="m-t-20 m-b-30">
+                                        <h4 class="proBar-header">NEW USERS <br><span class="m-t-10">13,596</span></h4>
+                                        <h4 class="proBar-header proBar-h-R float-right">65% goal reached <br><span
+                                                class="m-t-5">20,000</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 65%;background-color:#64e0e2" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-t-20 m-b-30">
+                                        <h4 class="proBar-header">PAGE VIEWS <br><span class="m-t-10">83,123</span></h4>
+                                        <h4 class="proBar-header proBar-h-R float-right">45% goal reached <br><span
+                                                class="m-t-5">250,000</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 45%;background-color:#f5c094" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-t-20 m-b-30">
+                                        <h4 class="proBar-header">PAGE SESSIONS <br><span class="m-t-10">16,869</span>
+                                        </h4>
+                                        <h4 class="proBar-header proBar-h-R float-right">20% goal reached <br><span
+                                                class="m-t-5">85,000</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 20%;background-color:#ee83b7" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-t-20 m-b-30">
+                                        <h4 class="proBar-header">BOUNCE RATE <br><span class="m-t-10">28.50%</span>
+                                        </h4>
+                                        <h4 class="proBar-header proBar-h-R float-right">85% goal reached <br><span
+                                                class="m-t-5">30.50%</span></h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 85%;background-color:#65a3fa" aria-valuenow="25"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pie chart -->
+                <div class="col-sm-4">
+                    <div class="portlet">
+                        <div class="portlet-heading">
+                            <h3 class="portlet-title text-dark">Sessions By Channel </h3>
+                        </div>
+                        <hr>
+                        <div class="portlet-body">
+                            <div id="pie-chart">
+                                <div id="pie-chart-ex" class="flot-chart" style="height: 185px">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row donut-chart-text">
+                            <div class="col-6 m-t-10">
+                                <h5>Organic Search</h5>
+                                <h4 style="color:#ee83b7"><span class="dot" style="background: #ee83b7;"></span> 1,320 <span>25%</span></h4>
+                            </div>
+                            <div class="col-6 m-t-10">
+                                <h5>Email</h5>
+                                <h4 style="color:#65a3fa"><span class="dot" style="background: #65a3fa;"></span> 987 <span>20%</span></h4>
+                            </div>
+                            <div class="col-6 m-t-10">
+                                    <h5>Referral</h5>
+                                    <h4 style="color: #64e0e2"><span class="dot" style="background: #64e0e2;"></span> 2.010 <span>30%</span></h4>
+                                </div>
+                                <div class="col-6 m-t-10">
+                                    <h5>Social Media</h5>
+                                    <h4 style="color:#f5c094"><span class="dot" style="background: #f5c094;"></span> 1,054 <span>25%</span></h4>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end wrapper -->
+
+
+    <!-- JS  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+   
+    <!-- Page js  -->
+    <script src="assets/morris/morris.min.js"></script>
+    <script src="assets/raphael/raphael-min.js"></script>
+    <script src="assets/js/jquery.flot.js"></script>  
+    <script src="assets/js/jquery.flot.pie.js"></script>
+
+    <!-- Custom main Js -->
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+    <!-- End of JS -->
+</body>
+
+</html>
